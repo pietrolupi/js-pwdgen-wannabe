@@ -26,3 +26,23 @@ console.log(generatedPassword);
 
 document.getElementById('yourPassword').innerHTML = generatedPassword;
 document.getElementById('userName').innerHTML = name;
+
+
+//3. - opzione di inserimento secondaria:
+
+const generatedMessage = `
+   <div class="container">
+      <div class="card m-auto mt-5" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Ciao ${name} !</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">La tua password perfetta è:</h6>
+          <p class="card-text"> ${generatedPassword} </p>
+          
+        </div>
+      </div>
+  </div>
+
+`;
+
+console.log (generatedMessage);
+document.getElementById('customMessage').innerHTML = generatedMessage;
