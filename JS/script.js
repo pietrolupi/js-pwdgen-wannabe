@@ -24,4 +24,5 @@ console.log(generatedPassword);
 
 //3. 
 
-document.getElementById
+document.getElementById('yourPassword').innerHTML = generatedPassword;
+document.getElementById('userName').innerHTML = name;
