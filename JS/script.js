@@ -13,9 +13,9 @@ PASSAGGI:
 */
 
 //1.
-const name = prompt('Come ti chiami?');
-const surname = prompt('Quale è il tuo cognome?');
-const color = prompt('Qual è il tuo colore preferito?');
+const name = prompt('Come ti chiami?').trim().split(" ").join("");
+const surname = prompt('Quale è il tuo cognome?').split(" ").join("");
+const color = prompt('Qual è il tuo colore preferito?').split(" ").join("");
 
 //2. 
 const generatedPassword = name + surname + color + parseInt(23);
